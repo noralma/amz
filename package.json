@@ -1,11 +1,13 @@
 {
-  "name": "clt_amz",
+  "name": "amz",
   "version": "1.0.0",
   "description": "cliente amazon",
   "main": "index.js",
   "author": "Juan Antonio Marcos Vázquez",
   "dependencies": {
 	"express": "",
-	"mongo": ""
+	"mongo": "",
+  "method-override": "",
+  "body-parser": ""
 	}
 }

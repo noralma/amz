@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
+  </head>
+  <body ng-controller="MainController">
+    <i class="fa fa-amazon" ng-click="buscar()"></i>
+    <div ng-repeat="gafa in resultado track by $index">
+      <img src="{{ gafa.SmallImage[0].URL[0] }}" alt="" />
+      <label>{{ gafa.ItemAttributes[0].Title[0] }}</label>
+      <label>{{ gafa.ItemAttributes[0].ListPrice[0].FormattedPrice[0] }}</label>
+      <a href="{{ gafa.ItemLinks[0].ItemLink[0].URL[0] }}"><i class="fa fa-shopping-cart"></i>
+    </div>
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

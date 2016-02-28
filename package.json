@@ -2,12 +2,13 @@
   "name": "amz",
   "version": "1.0.0",
   "description": "cliente amazon",
-  "main": "index.js",
+  "main": "ws_amz.js",
   "author": "Juan Antonio Marcos Vázquez",
   "dependencies": {
 	"express": "",
 	"mongo": "",
   "method-override": "",
-  "body-parser": ""
+  "body-parser": "",
+  "path": ""
 	}
 }
